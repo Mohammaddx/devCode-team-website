@@ -1,0 +1,99 @@
+.navbar {
+  box-shadow: 1px 1px 100px 1px #ccc;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  padding: 2px;
+}
+
+.link {
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #aaa;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #fff;
+  box-shadow: 1px 0px 10px 0px rgb(15, 80, 118, 0.5);
+  background-position: left;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+      45deg,
+      rgb(15, 80, 118, 0.8) 0%,
+      rgb(110, 216, 204, 0.8) 100%
+    ),
+    url("https://media.giphy.com/media/3qXi5eIvcgCmTDObOU/giphy.gif");
+}
+
+.logo img {
+  width: 200px;
+  height: 90px;
+}
+
+.menu-logo {
+  display: none;
+  color: #aaa;
+}
+
+.active {
+  color: #fff;
+  box-shadow: 1px 0px 10px 0px rgb(15, 80, 118, 0.5);
+  background-position: left;
+  background-attachment: fixed;
+  background-image: linear-gradient(
+      45deg,
+      rgb(15, 80, 118, 0.8) 0%,
+      rgb(110, 216, 204, 0.8) 100%
+    ),
+    url("https://media.giphy.com/media/3qXi5eIvcgCmTDObOU/giphy.gif");
+}
+
+@media (max-width: 875px) {
+  .links {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #eee;
+    top: 100px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    display: block;
+    overflow-y: visible;
+  }
+
+  li {
+    display: block;
+    line-height: 100px;
+    position: relative;
+    left: -20px;
+  }
+  ul {
+    width: fit-content;
+    margin: auto;
+    overflow-y: visible;
+  }
+  .menu-logo {
+    display: block;
+  }
+
+  .logo img {
+    width: 200px;
+    height: 80px;
+  }
+}
