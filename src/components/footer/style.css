@@ -1,0 +1,12 @@
+footer {
+  background-image: linear-gradient(45deg, #283031 30%, transparent 100%),
+    url(../../images/footer.jpg);
+  color: #fff;
+  font-size: 15px;
+  text-align: left;
+}
+
+span {
+  color: darkcyan;
+  font-weight: bold;
+}
